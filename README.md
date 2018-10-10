@@ -46,3 +46,5 @@ LocalTime.config.i18n["es"] = {
 LocalTime.config.locale = "es"
 ```
 
+
+
