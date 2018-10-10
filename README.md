@@ -27,8 +27,23 @@ LocalTime.start()
 <%= local_time(date, :long) %>
 
 <%= local_time_ago(time) %>
-<%=  %>
-<%=  %>
+<%= local_relative_time(time, 'weekday') %>
+<%= local_relative_time(time, type: 'time-or-date') %>
+
+LocalTime.config.i18n["es"] = {
+  date: {
+    dayNames: [ ... ],
+    monthNames: [ ... ],
+    ...
+  },
+  time: {
+    ...
+  },
+  datetime: {
+    ...
+  }
+}
+LocalTime.config.locale = "es"
 
 
 ```
